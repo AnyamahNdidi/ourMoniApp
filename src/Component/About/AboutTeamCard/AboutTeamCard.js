@@ -1,19 +1,22 @@
 import React from 'react'
-import ima from '../Images/StoryPix.jpg'
 
 function AboutTeamCard({nam, pos, avat}) {
     return (
         <div>
             <div style={{
-                height:"150px"}}>
+                height:"150px",
+                margin:"10px",
+                flex: "0 0 auto",
+                width:"140px"
+            }}>
                 <div style={{
                     display:"flex",
                     alignItems:"center",
                     justifyContent:"center",
-                    height:"95px",
-                    backgroundColor:"gray",
-                    width:"95px",
-                    borderRadius:"100%"
+                    height:"105px",
+                    width:"105px",
+                    borderRadius:"100%",
+
                 }}><img src={avat} alt="Team" style={{
                     height:"100%",
                     width:"100%",

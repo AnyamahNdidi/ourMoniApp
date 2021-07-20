@@ -119,6 +119,7 @@ height: auto;
 @media screen and (max-width:320px){
 width: 310px;
 height: auto;
+padding: 5px;
 }
 `
 

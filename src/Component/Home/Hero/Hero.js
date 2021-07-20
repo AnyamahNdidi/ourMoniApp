@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 import Carousel from 'react-bootstrap/Carousel'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { Button } from 'antd'
 
 function Hero() {
   return (
@@ -23,8 +23,26 @@ function Hero() {
 
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <SliderBar>
+
+                <Text1>
+                Where This Money Dae Go Self?
+                </Text1>
+               <Text2>
+               You na dae wonder wetin your commounity leader dae use your money do?
+               </Text2>
+              <Text3>
+              <Button>
+                    If You won know Click here
+                    
+                  </Button>
+
+              </Text3>
+              
+
+
+              </SliderBar>
+
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -41,8 +59,25 @@ function Hero() {
             />
 
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <SliderBar>
+
+<Text1>
+We Are The AuditingApp
+</Text1>
+<Text2>
+Accountability Is Essential, Its Your Right To know
+</Text2>
+<Text3>
+<Button>
+If You won know Click here
+    
+  </Button>
+
+</Text3>
+
+
+
+</SliderBar>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -59,8 +94,25 @@ function Hero() {
             />
 
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <SliderBar>
+
+<Text1>
+  Don't Be Left out
+</Text1>
+<Text2>
+know What's Happening In Your commounity
+</Text2>
+<Text3>
+<Button>
+    If You won know Click here
+    
+  </Button>
+
+</Text3>
+
+
+
+</SliderBar>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>
@@ -70,6 +122,82 @@ function Hero() {
 }
 
 export default Hero
+
+const Text1 = styled.div`
+font-size: 40px;
+font-weight: bold;
+
+
+@media screen and (max-width:600px){
+  font-size: 30px;
+font-weight: bold;
+line-height: 40px;
+}
+
+
+`
+const Text2 = styled.div`
+font-size: 20px;
+margin-top: -20px;
+
+@media screen and (max-width:600px){
+font-size: 15px;
+font-weight: bold;
+text-align: center;
+margin-top: 10px;
+margin-bottom: 10px ;
+}
+
+
+`
+const Text3 = styled.div`
+
+
+
+@media screen and (max-width:425px){
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 45px;
+}
+
+@media screen and (max-width:375px){
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 25px;
+}
+
+@media screen and (max-width:320px){
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 15px;
+}
+`
+
+
+
+const SliderBar = styled.div`
+display: flex;
+flex-direction: column;
+width: 100%;
+height: 140px;
+justify-content:space-between;
+align-items: flex-start;
+margin-top: -250px;
+margin-left: -70px;
+
+
+@media screen and (max-width:600px){
+  margin-top: -300px;
+  margin-left: 0px;
+}
+
+
+
+
+`
 
 const Container = styled.div`
 

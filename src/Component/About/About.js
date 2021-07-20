@@ -9,6 +9,13 @@ import ubani from './Images/ubani.jpg'
 import peter from './Images/peter.jpg'
 import bukky from './Images/bukky.jpg'
 import ndidi from './Images/ndidi.jpg'
+import esther from './Images/esther.jpg'
+import gideon from './Images/gideon.jpg'
+import sam from './Images/sam.jpg'
+import cynthia from './Images/cynthia.jpg'
+
+
+
 
 
 
@@ -77,19 +84,23 @@ function About() {
         />
         <AboutTeamCard 
         nam="Cynthia Onyilimba"
-        pos="UI/UX"
+        pos="UI/UX Designer"
+        avat={cynthia} 
         />
         <AboutTeamCard 
         nam="Samuel Kelechi"
         pos="Project Coordinator" 
+        avat={sam} 
         />
         <AboutTeamCard 
-        nam="Esther"
-        pos="Content Creator" 
+        nam="Adeniran Esther"
+        pos="Content Creator"
+        avat={esther} 
         />
         <AboutTeamCard 
         nam="Gideon Ekeke"
         pos="Developer" 
+        avat={gideon} 
         />
       </OurTeamContent>
 
@@ -116,6 +127,7 @@ const AboutContainer = styled.div`
 
 const AboutTop = styled.div`
   width: 100%;
+  padding-top: 80px;
   height: 500px;
   text-align: left;
   color: white;
@@ -146,10 +158,13 @@ const AboutTop = styled.div`
 
   @media screen and (max-width: 650px) {
     text-align: right;
-    
+    height: 300px;
+
     h1 {
       padding-right:20px;
       font-size: large;
+      margin-top:110px;
+      margin-left: 60px;
     }
     h4{
       padding-right: 20px;
@@ -163,6 +178,7 @@ const OurStory = styled.div`
   justify-content: center;
   align-items: center;
   font-weight: bolder;
+  font-size: 25px;
   width: 100%;
   margin-top: 25px;
   height: 60px;
@@ -178,6 +194,7 @@ const OurMission = styled.div`
   font-weight: bolder;
   margin-bottom: 15px;
   font-size: bold;
+  font-size: 20px;
 `;
 
 const OurMissionContent = styled.div`
@@ -194,7 +211,9 @@ const OurMissionContent = styled.div`
 const OurLeadership = styled.div`
   font-weight: bolder;
   margin-bottom: 15px;
+  margin-top: 20px;
   font-size: bold;
+  font-size: 20px;
 `;
 
 const OurLeadershipCards = styled.div`
@@ -213,14 +232,16 @@ const OurLeadershipCards = styled.div`
 
 const OurTeam = styled.div`
   font-weight: bolder;
+  margin-top: 20px;
   margin-bottom: 10px;
   font-size: bold;
+  font-size: 20px;
 `;
 
 const OurTeamContent = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 80%;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -230,19 +251,23 @@ const OurTeamContent = styled.div`
       flex-wrap: wrap;
       justify-content: space-between;
       width: 80%;
+      overflow-x: scroll;
     }
     @media screen and (max-width: 650px){
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      width: 80%;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      whitespace: none;
     }
 `;
 
 const OurImpact = styled.div`
   font-weight: bolder;
+  margin-top: 20px;
   margin-bottom: 15px;
   font-size: bold;
+  font-size: 20px;
 `
 
 const OurImpactContent = styled.div`
@@ -250,8 +275,8 @@ const OurImpactContent = styled.div`
   flex-wrap: wrap;
   justify-content: space-between;
   width: 80%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 
     @media screen and (max-width: 650px){
       display: flex;
