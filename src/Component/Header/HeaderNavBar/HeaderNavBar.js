@@ -40,10 +40,10 @@ const HeaderNavBar = ({ toggle }) => {
             <GoGraph />
             <span>Infographs</span>
           </Link>
-          <a>
+          <Link to="/blog">
             <BsNewspaper />
             <span>Blog</span>
-          </a>
+          </Link>
           <Input
             style={{
               height: "30px",
@@ -56,7 +56,9 @@ const HeaderNavBar = ({ toggle }) => {
         </Wrapper>
 
         <UserButton>
-          <Button>Sign Up</Button>
+          <Link to="/signup">
+            <Button>Log In</Button>
+          </Link>
         </UserButton>
 
         <AiOutlineMenuUnfold onClick={toggle} className="menu-sider" />

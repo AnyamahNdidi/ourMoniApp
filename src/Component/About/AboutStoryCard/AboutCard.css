@@ -8,7 +8,7 @@
 
 .About_Mobile {
     display: flex;
-    width: 580px;
+    width: 530px;
     height: 400px;
     margin-bottom: 40px;
     /* background-color: rgb(161, 134, 101); */
@@ -18,9 +18,10 @@
 
 .About_Mobile1 {
     display: flex;
-    width: 580px;
+    width: 550px;
     height: 400px;
     margin-bottom: 40px;
+
     /* background-color: bisque; */
     justify-content: center;
     align-items: center;

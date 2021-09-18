@@ -97,10 +97,10 @@ If You won know Click here
             <SliderBar>
 
 <Text1>
-  Don't Be Left out
+  Don't Be Left out, Be Inform.
 </Text1>
 <Text2>
-know What's Happening In Your commounity
+know What's Happening In Your commounity. E Get Why.
 </Text2>
 <Text3>
 <Button>
@@ -159,6 +159,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-left: 45px;
+margin-top: 30px;
 }
 
 @media screen and (max-width:375px){
@@ -166,6 +167,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-left: 25px;
+margin-top: 30px;
 }
 
 @media screen and (max-width:320px){
@@ -173,6 +175,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-left: 15px;
+margin-top: 30px;
 }
 `
 
@@ -203,13 +206,7 @@ const Container = styled.div`
 
 height: 400px;
 background-color: #212531;
-justify-content: center;
-align-items: center;
-color: white;
-width: 100%;
-align-items: center;
-display: flex;
-margin-top: 60px;
+margin-top: 70px;
 z-index: 800;
 
 

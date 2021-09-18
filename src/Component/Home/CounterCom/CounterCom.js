@@ -124,6 +124,7 @@ width: 415px;
 justify-content: center;
 display: flex;
 align-items: center;
+
 }
 
 @media screen and (max-width:375px){
@@ -146,8 +147,9 @@ const Counter = styled.div`
 display: grid;
 
 width: 100%;
-grid-template-columns: 1fr 1fr 1fr;
+display:flex;
 justify-content: space-between;
+padding:20px;
 
 
 
@@ -161,7 +163,7 @@ width: 310px;
 `
 
 const Container = styled.div`
-height: 200px;
+height: 250px;
 background-color: #212531;
 margin-top: 50px;
 display: flex;

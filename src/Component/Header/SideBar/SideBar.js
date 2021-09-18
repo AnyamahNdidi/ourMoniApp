@@ -112,6 +112,8 @@ const SideBar = ({ isOpen, toggle }) => {
                   <div style={{ fontSize: "10px" }}>name@gmail.com</div>
                 </div>
               </div>
+
+
               <div
                 style={{
                   display: "flex",
@@ -124,16 +126,21 @@ const SideBar = ({ isOpen, toggle }) => {
                 }}
               >
                 <AiFillHome style={{ fontSize: "17px", margin: "10px" }} />
-                <div
-                  style={{
-                    marginRight: "50px",
-                    fontSize: "17px",
-                    margin: "10px",
-                  }}
-                >
-                  HOME
-                </div>
+                <Link to="/" style={{ color: "white" }}>
+                  <div
+                    onClick={toggle}
+
+                    style={{
+                      marginRight: "50px",
+                      fontSize: "17px",
+                      margin: "10px",
+                    }}
+                  >
+                    HOME
+                  </div>
+                </Link>
               </div>
+
               <div
                 style={{
                   display: "flex",
@@ -148,15 +155,18 @@ const SideBar = ({ isOpen, toggle }) => {
                 <BsFillPersonLinesFill
                   style={{ fontSize: "17px", margin: "10px" }}
                 />
-                <div
-                  style={{
-                    marginRight: "60px",
-                    fontSize: "17px",
-                    margin: "10px",
-                  }}
-                >
-                  ABOUT
-                </div>
+                <Link to="/about" style={{ color: "white" }}>
+                  <div
+                    onClick={toggle}
+                    style={{
+                      marginRight: "60px",
+                      fontSize: "17px",
+                      margin: "10px",
+                    }}
+                  >
+                    ABOUT
+                  </div>
+                </Link>
               </div>
 
               <div
@@ -171,15 +181,18 @@ const SideBar = ({ isOpen, toggle }) => {
                 }}
               >
                 <GoGraph style={{ fontSize: "17px", margin: "10px" }} />
-                <div
-                  style={{
-                    marginRight: "60px",
-                    fontSize: "17px",
-                    margin: "10px",
-                  }}
-                >
-                  INFO
-                </div>
+                <Link to="/infograph" style={{ color: "white" }}>
+                  <div
+                    onClick={toggle}
+                    style={{
+                      marginRight: "60px",
+                      fontSize: "17px",
+                      margin: "10px",
+                    }}
+                  >
+                    INFO
+                  </div>
+                </Link>
               </div>
               <div
                 style={{
@@ -193,15 +206,18 @@ const SideBar = ({ isOpen, toggle }) => {
                 }}
               >
                 <BsNewspaper style={{ fontSize: "17px", margin: "10px" }} />
-                <div
-                  style={{
-                    marginRight: "60px",
-                    fontSize: "17px",
-                    margin: "10px",
-                  }}
-                >
-                  BLOG
-                </div>
+                <Link to="/blog" style={{ color: "white" }}>
+                  <div
+                    onClick={toggle}
+                    style={{
+                      marginRight: "60px",
+                      fontSize: "17px",
+                      margin: "10px",
+                    }}
+                  >
+                    BLOG
+                  </div>
+                </Link>
               </div>
             </div>
           </div>

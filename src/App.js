@@ -6,8 +6,9 @@ import HeaderNav from "../src/Component/Header/HeaderNav"
 import Footer from "../src/Component/Footer/Footer"
 import Inforgraph from "./Component/InfoGraph/Inforgraph"
 import About from "./Component/About/About"
-import Apicon from './Component/Apiconsume/Apicon';
-
+import Login from "./Component/Login/Login"
+import Blog from './Component/Blog/Blog';
+import SignUp from "./Component/SignUp/SignUp"
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route exact path="/infograph" component={Inforgraph} />
           <Route exact path="/about" component={About} />
-          <Route exact path="/apicom" component={Apicon} />
+          <Route exact path="/blog" component={Blog} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/signup" component={SignUp} />
         </Switch>
         <Footer />
       </Router>
